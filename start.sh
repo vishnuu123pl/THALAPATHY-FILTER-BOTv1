@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/tejachowdary0/THALAPATHY-FILTER-BOTv /THALAPATHY-FILTER-BOTv
+  git clone https://github.com/tejachowdary0/THALAPATHY-FILTER-BOTv.git /THALAPATHY-FILTER-BOTv
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /THALAPATHY-FILTER-BOTv 
