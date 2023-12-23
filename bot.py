@@ -45,7 +45,7 @@ ppath = "plugins/*.py"
 files = glob.glob(ppath)
 LazyPrincessBot.start()
 loop = asyncio.get_event_loop()
-loop.create_task(amain(loop=loop))
+
 
 async def Lazy_start():
     print('\n')
