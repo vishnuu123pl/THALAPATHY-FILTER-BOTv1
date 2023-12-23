@@ -46,7 +46,6 @@ files = glob.glob(ppath)
 LazyPrincessBot.start()
 loop = asyncio.get_event_loop()
 
-
 async def Lazy_start():
     print('\n')
     print('Initalizing Lazy Bot')
@@ -92,7 +91,6 @@ async def Lazy_start():
 
 if __name__ == '__main__':
     try:
-        
         loop.run_until_complete(Lazy_start())
     except KeyboardInterrupt:
         logging.info('Service Stopped Bye 👋')
