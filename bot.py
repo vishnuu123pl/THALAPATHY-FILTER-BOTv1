@@ -45,7 +45,7 @@ ppath = "plugins/*.py"
 files = glob.glob(ppath)
 LazyPrincessBot.start()
 loop = asyncio.get_event_loop()
-
+loop.create_task(amain(loop=loop))
 
 async def Lazy_start():
     print('\n')
@@ -93,7 +93,7 @@ async def Lazy_start():
 if __name__ == '__main__':
     try:
         
-        loop.run_until_complete(amain(loop=loop))
+        loop.run_until_complete(Lazy_start())
     except KeyboardInterrupt:
         logging.info('Service Stopped Bye 👋')
 
